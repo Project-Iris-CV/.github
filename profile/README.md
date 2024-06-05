@@ -25,6 +25,8 @@ Before launching the frontend, a `.env` file must be created containing the URL 
 VITE_API_URL="http://localhost:8080/api"
 ```
 
+**Note:** For installing the dependencies for the frontend the command `npm install -f` will be used are conflicting with the react version used.
+
 ### Setup for backend
 Setting up the backend involves configuring values for the `.env` file and using special arguments in the iris.py main file. The `.env` file follows this format:
 ```
@@ -67,3 +69,15 @@ To setup the service repository, kindly follow the steps:
    ```
 4. Create the folder public/images/snapshots if it doesn't already exist.
 5. Execute the `init.py` command to initialize the service database: `python init.py`
+
+## Commands for Running the Software
+1. For the service: `python server.py`
+2.  For the frontend: `npm run dev`
+3.  For the backend: `python iris.py` or `python iris.py --disable-service` for debugging.
+
+# Authors:
+- Aguilar, Karl Joseph (project manager)
+- Crisang, Lance Daniel (service)
+- Espinola, Hubert I (backend)
+- Reaño, Kenneth Joshua (frontend)
+- Santos, Angelo Noel (frontend)
